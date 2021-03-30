@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logo-mobile.svg" width="74" height="23" alt="Приложение «Pink»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__container">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="page-header__title title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  </header>
+  <main class="page-main">
+    <section class="form">
+      <h2 class="visually-hidden">Форма-заявка на конкурс</h2>
+      <div class="form__container">
+        <p class="form__text text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+          бонусную карту!</p>
+        <form action="https://echo.htmlacademy.ru/" method="post" class="form">
+          <fieldset class="form___section username">
+            <div class="form__item">
+              <label for="form-surname">Фамилия:</label>
+              <input type="text" name="surname" placeholder="Укажите фамилию *" id="form-surname" class="form-text">
+            </div>
+            <div class="form__item">
+              <label for="form-name">Имя:</label>
+              <input type="text" name="name" placeholder="Введите ваше имя *" id="form-name" class="form-text">
+            </div>
+            <div class="form__item">
+              <label for="form-patronymic">Отчество:</label>
+              <input type="text" name="patronymic" placeholder="Ну и отчество тоже" id="form-patronymic"
+                class="form-text">
+            </div>
+          </fieldset>
+          <fieldset class="form___section progress">
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+            <div class="form__item">
+              <input type="checkbox" id="shark" name="progress-one" value="Сделал селфи с акулой" checked>
+              <label for="shark">Сделал селфи с акулой</label>
+            </div>
+            <div class="form__item">
+              <input type="checkbox" id="beach" name="progress-two" value="Обгорел на пляже" checked>
+              <label for="beach">Обгорел на пляже</label>
+            </div>
+            <div class="form__item">
+              <input type="checkbox" id="chack" name="progress-three" value="Видел Чака Норриса">
+              <label for="chack">Видел Чака Норриса</label>
+            </div>
+            <div class="form__item">
+              <input type="checkbox" id="souvenir" name="progress-four" value="Накупил сувениров">
+              <label for="souvenir">Накупил сувениров</label>
+            </div>
+            <div class="form__item">
+              <input type="checkbox" id="tower" name="progress-five" value="Удержал башню" checked>
+              <label for="tower">Удержал башню</label>
+            </div>
+            <div class="form__item">
+              <input type="checkbox" id="hotel" name="progress-six" value="Разгромил отель">
+              <label for="hotel">Разгромил отель</label>
+            </div>
+          </fieldset>
+          <fieldset class="form___section contacts">
+            <div class="form__item">
+              <label for="form-phone">Номер телефона:</label>
+              <input type="text" name="phone" placeholder="Номер, пожалуйста" id="form-phone" class="form-phone">
+            </div>
+            <div class="form__item">
+              <label for="form-email">Ваш e-mail:</label>
+              <input type="email" name="e-mail" placeholder="Введите почту *" id="form-email" class="form-email">
+            </div>
+          </fieldset>
+          <fieldset class="form___section mobile">
+            <legend>С каким приложением путешествовали?</legend>
+
+            <input type="radio" id="radio-ios" name="ios" checked>
+            <label for="radio-ios">Pink для iOS</label><br />
+
+            <input type="radio" id="radio-android" name="android">
+            <label for="radio-android">Pink на Android</label><br />
+
+            <input type="radio" id="radio-windows" name="windows">
+            <label for="radio-windows">Windows Phone</label>
+          </fieldset>
+          <fieldset class="form___section textarea">
+            <legend>Опишите свои эмоции</legend>
+            <textarea name="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button type="submit" class="form__button button">Отправить форму</button>
+        </form>
+        <p class="form__text required"><span>*</span> &mdash; обязательные поля</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <img src="img/logo-footer.svg" width="74" height="23" alt="Приложение «Pink»">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+              Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <section class="pop-up">
+    <h2 class="visually-hidden">Всплывающие окна</h2>
+    <div class="pop-up--failure">
+      <div class="pop-up__container">
+        <h3 class="pop-up__title title">Что-то пошло не так!</h3>
+        <p class="pop-up__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button type="button" class="pop-up__button button">Ок</button>
+      </div>
+    </div>
+    <div class="pop-up--success">
+      <div class="pop-up__container">
+        <h3 class="pop-up__title title">Ваша заявка отправлена</h3>
+        <p class="pop-up__content">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы
+          рассмотрим ее и оповестим вас.</p>
+        <button type="button" class="pop-up__button button">Закрыть окно</button>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

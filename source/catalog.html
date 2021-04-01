@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logo-mobile.svg" width="74" height="23" alt="Приложение «Pink»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__container">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="page-header__title title">Фотографии пользователей</h1>
+  </header>
+  <main class="page-catalog">
+    <section class="photo">
+      <h2 class="visually-hidden">Фотографии наших пользователей</h2>
+      <div class="photo__container">
+        <p class="photo__text text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
+          ваших?</p>
+      </div>
+      <div class="panorama__picture">
+        <span class="panorama__caption">Панорама дня</span>
+        <img src="img/panorama-mobile.jpg" width="320" height="137" alt="Панорама дня">
+      </div>
+      <div class="photo__container">
+        <article class="article">
+          <img src="img/photo-1-mobile.jpg" class="article__img" width="280" height="180" alt="Фотография пользователя">
+          <h3 class="article__author author-article">Левон</h3>
+          <span class="article__datetime">(5 часов назад)</span>
+          <p class="article__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <div class="article__meta">
+            <img src="img/heart.svg" width="13" height="12" class="article__meta--icon" alt="Отметка нравится">
+            <span class="article__meta--like">Нравится: 356</span>
+          </div>
+        </article>
+        <article class="article">
+          <img src="img/photo-2-mobile.jpg" class="article__img" width="280" height="180" alt="Фотография пользователя">
+          <h3 class="article__author author-article">Антон</h3>
+          <span class="article__datetime">(12 часов назад)</span>
+          <p class="article__content">Соседи будут рады!</p>
+          <div class="article__meta">
+            <img src="img/heart.svg" width="13" height="12" class="article__meta--icon" alt="Отметка нравится">
+            <span class="article__meta--like">Нравится: 666</span>
+          </div>
+        </article>
+        <article class="article">
+          <img src="img/photo-3-mobile.jpg" class="article__img" width="280" height="180" alt="Фотография пользователя">
+          <h3 class="article__author author-article">Борис</h3>
+          <span class="article__datetime">(20 часов назад)</span>
+          <p class="article__content">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <div class="article__meta">
+            <img src="img/heart.svg" width="13" height="12" class="article__meta--icon" alt="Отметка нравится">
+            <span class="article__meta--like">Нравится: 215</span>
+          </div>
+        </article>
+        <article class="article">
+          <img src="img/photo-4-mobile.jpg" class="article__img" width="280" height="180" alt="Фотография пользователя">
+          <h3 class="article__author author-article">Сергей</h3>
+          <span class="article__datetime">(25 часов назад)</span>
+          <p class="article__content">Самая кубанская в мире!</p>
+          <div class="article__meta">
+            <img src="img/heart.svg" width="13" height="12" class="article__meta--icon" alt="Отметка нравится">
+            <span class="article__meta--like">Нравится: 4</span>
+          </div>
+        </article>
+        <article class="article">
+          <img src="img/photo-5-mobile.jpg" class="article__img" width="280" height="180" alt="Фотография пользователя">
+          <h3 class="article__author author-article">Максим</h3>
+          <span class="article__datetime">(40 часов назад)</span>
+          <p class="article__content">Где снег-то?</p>
+          <div class="article__meta">
+            <img src="img/heart.svg" width="13" height="12" class="article__meta--icon" alt="Отметка нравится">
+            <span class="article__meta--like">Нравится: 150</span>
+          </div>
+        </article>
+        <article class="article">
+          <img src="img/photo-6-mobile.jpg" width="280" height="180" class="article__img" alt="Фотография пользователя">
+          <h3 class="article__author author-article">Надежда</h3>
+          <span class="article__datetime">(45 часов назад)</span>
+          <p class="article__content">Всем GM и взаимные лайки!</p>
+          <div class="article__meta">
+            <img src="img/heart.svg" width="13" height="12" class="article__meta--icon" alt="Отметка нравится">
+            <span class="article__meta--like">Нравится: 2560</span>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="upload">
+      <h2 class="visual-hidden">Загрузите свою фотографию</h2>
+      <p class="upload__text text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="upload__page">
+        <img src="img/photo-7-mobile.png" class="upload__image" width="280" height="374" alt="Фотография для загрузки">
+        <ul class="upload__list">
+          <li class="upload__item upload-button">
+            <img src="img/crop.svg" width="44" height="44" alt="Обрезка фотографии">
+          </li>
+          <li class="upload__item upload-button">
+            <img src="img/fill.svg" width="48" height="43" alt="Заливка фотографии">
+          </li>
+          <li class="upload__item upload-button">
+            <img src="img/contrast.svg" width="32" height="32" alt="Контраст фотографии">
+          </li>
+        </ul>
+        <div class="upload__control">
+          <input type="range" min="1" max="100" value="50" class="upload-range" id="upload-range">
+        </div>
+      </div>
+      <a href="" class="upload__button upload-button">Запостить</a>
+      <a href="" class="upload__button upload-button">Отмена</a>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <img src="img/logo-footer.svg" width="74" height="23" alt="Приложение «Pink»">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+              Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

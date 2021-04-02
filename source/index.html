@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -42,8 +43,8 @@
   <main class="page-main">
     <h1 class="visually-hidden">Мобильное приложение «Pink»</h1>
     <section class="promo">
-      <div class="promo__container">
-        <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
+      <div class="promo__container promo__container--screen">
+        <h2 class="promo__title title">Взгляните на жизнь иначе!</h2>
         <a href="https://www.apple.com/ru/app-store/" class="button">
           Скачать приложение
         </a>
@@ -75,20 +76,20 @@
           <span class="">Устали от серости мегаполиса?</span>
           <span class="">Нам есть, что вам<br>предложить!</span>
         </h2>
-        <div class="information__list">
+        <div class="information__list information-background">
           <div class="information__item">
             <h3 class="information__subtitle subtitle">Поднимает настроение</h3>
-            <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            <p class="information__text text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
               несколько кликов!</p>
           </div>
           <div class="information__item">
             <h3 class="information__subtitle subtitle">Меняет мир вокруг</h3>
-            <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            <p class="information__text text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
               эффект</p>
           </div>
           <div class="information__item">
             <h3 class="information__subtitle subtitle">Заводит новых друзей</h3>
-            <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            <p class="information__text text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </div>
         </div>
@@ -100,8 +101,8 @@
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+              <h3 class="reviews__author-name username">Николай Петров</h3>
+              <p class="reviews__text text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
                 серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
           </blockquote>
@@ -120,34 +121,34 @@
         <h2 class="price__title visually-hidden">Тарифы</h2>
         <div class="price__list slider__list">
           <div class="price__item price-table slider__item">
-            <div class="price-table__header">
-              <h3 class="price-table__title">База</h3>
+            <div class="price-table__header table-header">
+              <h3 class="price-table__title title">База</h3>
               <span class="price-table__price">1,99 USD</span>
             </div>
-            <ul class="price-table__body">
+            <ul class="price-table__body table-body">
               <li class="price-table__body--pink checked">Розовый</li>
               <li class="price-table__body--smile unchecked">Смайлики</li>
               <li class="price-table__body--comment unchecked">Комментарии</li>
             </ul>
           </div>
           <div class="price__item price-table slider__item--active">
-            <div class="price-table__header">
+            <div class="price-table__header table-header">
               <span class="price-table__header--type">Хит</span>
-              <h3 class="price-table__title">Стандарт</h3>
+              <h3 class="price-table__title title">Стандарт</h3>
               <span class="price-table__price">3,99 USD</span>
             </div>
-            <ul class="price-table__body">
+            <ul class="price-table__body table-body">
               <li class="price-table__body--pink checked">Розовый</li>
               <li class="price-table__body--smile checked">Смайлики</li>
               <li class="price-table__body--comment unchecked">Комментарии</li>
             </ul>
           </div>
           <div class="price__item price-table slider__item">
-            <div class="price-table__header">
-              <h3 class="price-table__title">Анлим</h3>
+            <div class="price-table__header table-header">
+              <h3 class="price-table__title title">Анлим</h3>
               <span class="price-table__price">9,99 USD</span>
             </div>
-            <ul class="price-table__body">
+            <ul class="price-table__body table-body">
               <li class="price-table__body--pink checked">Розовый</li>
               <li class="price-table__body--smile checked">Смайлики</li>
               <li class="price-table__body--comment checked">Комментарии</li>
@@ -168,19 +169,19 @@
       <div class="contacts__list">
         <div class="contacts__item">
           <h3 class="contacts__item--title subtitle">Звоните:</h3>
-          <a class="contacts__link" href="tel:+78125556666">
+          <a class="contacts__link link" href="tel:+78125556666">
             +7 (812) 555-66-66
           </a>
         </div>
         <div class="contacts__item">
           <h3 class="contacts__item--title subtitle">Пишите:</h3>
-          <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
+          <a class="contacts__link link" href="mailto:mail@htmlacademy.ru">
             mail@htmlacademy.ru
           </a>
         </div>
         <div class="contacts__item">
           <h3 class="contacts__item--title subtitle">Приезжайте в гости:</h3>
-          <a class="contacts__link" href="">
+          <a class="contacts__link link" href="">
             ул. Большая Конюшенная, 19/8
           </a>
         </div>
@@ -196,15 +197,14 @@
       <img src="img/logo-footer.svg" width="74" height="23" alt="Приложение «Pink»">
       <div class="page-footer__social social">
         <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <li class="social__item link">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
           </li>
-          <li class="social__item">
+          <li class="social__item link">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-              Инстаграме</a>
+          <li class="social__item link">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы на Ютубе</a>
           </li>
         </ul>
       </div>

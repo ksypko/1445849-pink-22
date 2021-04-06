@@ -1,15 +1,14 @@
-.price {
-  .title {
-    color: @white;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
+.price__headline {
+  color: @white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
-.price-table__header--type {
+.price__section--hit::before {
+  content: "Хит";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -20,7 +19,7 @@
   display: block;
 }
 
-.price-table {
+.price__section {
   color: @white;
   font-style: normal;
   font-weight: 300;
@@ -28,11 +27,11 @@
   line-height: 30px;
 }
 
-.table-header {
+.price__header {
   background: @darkgrey;
 }
 
-.table-body {
+.price__body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -41,7 +40,7 @@
   color: @darkgrey;
 }
 
-.checked {
+.price__item--checked {
   display: block;
   content: "";
   width: 31px;
@@ -49,7 +48,7 @@
   background: url("../img/yes.svg") 0 0 no-repeat;
 }
 
-.unchecked {
+.price__item--unchecked {
   display: block;
   content: "";
   width: 27px;

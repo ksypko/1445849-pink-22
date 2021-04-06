@@ -1,29 +1,19 @@
-.information {
-  .title {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 120%;
-    color: @darkgrey;
-  }
-
-  .subtitle {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
-    color: @black;
-  }
-
-  .text {
-    color: @darkgrey;
-  }
-}
-
-.information-background {
+.information__list {
   background-color: @lightgrey;
 }
 
-.information-background::after {
+.information__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: @black;
+}
+
+.information__text {
+  color: @darkgrey;
+}
+
+.information__list::after {
   display: block;
   content: "";
   width: 100%;

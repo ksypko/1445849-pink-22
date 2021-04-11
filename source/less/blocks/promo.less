@@ -1,5 +1,14 @@
 .promo {
   background: @sapphire url("../img/back-mobile.png") no-repeat center top;
+  min-height: 460px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 730px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 850px;
+  }
 }
 
 .promo__button {
@@ -20,6 +29,6 @@
   background: transparent url("../img/screen-mobile.png") no-repeat center top;
 }
 
-.promo-text {
+.promo__text {
   color: @white;
 }

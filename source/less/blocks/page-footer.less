@@ -1,3 +1,14 @@
 .page-footer {
   position: relative;
 }
+
+.page-footer__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

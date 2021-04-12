@@ -1,4 +1,13 @@
 .page-header {
+  display: flex;
+  flex-direction: row;
   background-color: @black;
   opacity: 0.3;
+  height: auto;
+  max-height: 66px;
+
+  @media (min-width: @tablet-width) {
+    height: auto;
+    min-height: 110px;
+  }
 }

@@ -1,5 +1,23 @@
 .information__list {
   background-color: @lightgrey;
+  position: relative;
+  overflow: hidden;
+}
+
+.information__row {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 50%;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .information__title {
@@ -9,14 +27,32 @@
   color: @black;
 }
 
+.information__item {
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
 .information__text {
   color: @darkgrey;
 }
 
-.information__list::after {
+.information__item--friends::after {
   display: block;
   content: "";
   width: 100%;
   height: 320px;
   background: url("../img/information-screen-mobile.png") 50% 0 no-repeat;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }

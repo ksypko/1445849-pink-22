@@ -1,6 +1,12 @@
 .site-list {
   list-style: none;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .site-list__item a {

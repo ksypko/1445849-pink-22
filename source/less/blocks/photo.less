@@ -1,4 +1,30 @@
-.photo__image--panorama::before {
+.photo__container {
+  width: 100%;
+}
+
+.photo__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.photo__item {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    max-width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 33.3%;
+  }
+}
+
+.photo__item--panorama {
+  max-width: 100%;
+}
+
+.photo__item--panorama::before {
   content: "Панорама дня";
   font-style: normal;
   font-weight: bold;
@@ -16,4 +42,5 @@
   font-size: 14px;
   line-height: 30px;
   color: @darkgrey;
+  text-align: center;
 }

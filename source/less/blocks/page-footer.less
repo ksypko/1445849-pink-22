@@ -2,13 +2,34 @@
   position: relative;
 }
 
+.page-footer__container {
+  width: 100%;
+  padding: 40px 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 980px;
+  }
+}
+
 .page-footer__row {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+.page-footer__copyright {
+  @media (min-width: @desktop-width) {
+    margin-top: 11px;
   }
 }

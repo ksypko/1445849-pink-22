@@ -10,88 +10,107 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logo-mobile.svg" width="74" height="23" alt="Приложение «Pink»">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__container">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              Фотографии
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              Конкурс
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <a class="page-header__logo">
+          <img src="img/logo-mobile.svg" width="74" height="23" alt="Приложение «Pink»">
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__container">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Мобильное приложение «Pink»</h1>
     <section class="promo">
-      <div class="promo__container promo__container--screen">
+      <div class="promo__container">
         <h2 class="promo__title">Взгляните на жизнь иначе!</h2>
-        <a href="https://www.apple.com/ru/app-store/" class="promo__button">
-          Скачать приложение
-        </a>
-        <div class="promo__list">
-          <div class="promo__item">
-            <a href="https://www.apple.com/ru/app-store/">
-              <img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Apple">
-            </a>
+        <img src="../img/screen-mobile.png" alt="" class="promo__image">
+        <div class="promo__block">
+          <a href="https://www.apple.com/ru/app-store/" class="promo__button">
+            Скачать приложение
+          </a>
+          <div class="promo__list">
+            <div class="promo__item">
+              <a href="https://www.apple.com/ru/app-store/">
+                <img src="img/apple-logo.svg" width="47" height="56" alt="Логотип Apple">
+              </a>
+            </div>
+            <div class="promo__item">
+              <a href="https://play.google.com/store/apps">
+                <img src="img/android-logo.svg" width="43" height="47" alt="Логотип GooglePlay">
+              </a>
+            </div>
+            <div class="promo__item">
+              <a href="https://www.microsoft.com/ru-ru/store/apps">
+                <img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft">
+              </a>
+            </div>
           </div>
-          <div class="promo__item">
-            <a href="https://play.google.com/store/apps">
-              <img src="img/android-logo.svg" width="43" height="47" alt="Логотип GooglePlay">
-            </a>
-          </div>
-          <div class="promo__item">
-            <a href="https://www.microsoft.com/ru-ru/store/apps">
-              <img src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип Microsoft">
-            </a>
-          </div>
+          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-        <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
     <section class="information">
       <div class="information__container">
         <h2 class="page-main__title">
-          <span class="">Устали от серости мегаполиса?</span>
+          <span class="">Устали от серости мегаполиса?<br></span>
           <span class="">Нам есть, что вам<br>предложить!</span>
         </h2>
       </div>
       <div class="information__list">
-        <div class="information__container information__row">
-          <div class="information__item information__item--mood">
-            <h3 class="information__title">Поднимает настроение</h3>
-            <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-              несколько кликов!</p>
+        <div class="information__container">
+          <div class=" information__row">
+            <div class="information__item information__item--mood">
+              <h3 class="information__title">Поднимает настроение</h3>
+              <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+                несколько кликов!</p>
+            </div>
+            <div class="information__item information__item--world">
+              <h3 class="information__title">Меняет мир вокруг</h3>
+              <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+                эффект</p>
+            </div>
+            <div class="information__item information__item--friends">
+              <h3 class="information__title">Заводит новых друзей</h3>
+              <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </div>
           </div>
-          <div class="information__item information__item--world">
-            <h3 class="information__title">Меняет мир вокруг</h3>
-            <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-              эффект</p>
+        </div>
+      </div>
+    </section>
+    <section class="time">
+      <div class="time__container">
+        <div class="time__row">
+          <div class="time__image">
+            <img src="img/time.png" width="298" height="345" alt="">
           </div>
-          <div class="information__item information__item--friends">
-            <h3 class="information__title">Заводит новых друзей</h3>
-            <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
+          <div class="time__block">
+            <h2 class="time__title">Эффект <br>на 24 часа!</h2>
+            <p class="time__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a href="" class="time__link">Узнать больше об исследовании</a>
           </div>
         </div>
       </div>
@@ -103,6 +122,7 @@
           <blockquote class="reviews__item slider__item">
             <div class="reviews__author-info">
               <h3 class="reviews__author-name">Николай Петров</h3>
+              <span class="reviews__caption">25 лет, водитель трамвая</span>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
                 серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
@@ -121,6 +141,13 @@
       <div class="price__container slider">
         <h2 class="price__title visually-hidden">Тарифы</h2>
         <div class="price__inner slider__list">
+          <div class="price__section price__section--hidden">
+            <ul class="price__list price__body">
+              <li class="price__item">Розовый</li>
+              <li class="price__item">Смайлики</li>
+              <li class="price__item ">Комментарии</li>
+            </ul>
+          </div>
           <div class="price__section slider__item">
             <div class="price__header">
               <h3 class="price__headline">База</h3>
@@ -132,8 +159,8 @@
               <li class="price__item price__item--unchecked">Комментарии</li>
             </ul>
           </div>
-          <div class="price__section price__section--hit slider__item--active">
-            <div class="price__header">
+          <div class="price__section slider__item--active">
+            <div class="price__header price__header--hit">
               <h3 class="price__headline">Стандарт</h3>
               <span class="price__subtitlee">3,99 USD</span>
             </div>
@@ -167,19 +194,19 @@
     <div class="contacts__container">
       <h2 class="page-main__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
       <div class="contacts__list">
-        <div class="contacts__item">
+        <div class="contacts__item contacts__item--phone">
           <h3 class="contacts__title">Звоните:</h3>
           <a class="contacts__link" href="tel:+78125556666">
             +7 (812) 555-66-66
           </a>
         </div>
-        <div class="contacts__item">
+        <div class="contacts__item contacts__item--email">
           <h3 class="contacts__title">Пишите:</h3>
           <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
             mail@htmlacademy.ru
           </a>
         </div>
-        <div class="contacts__item">
+        <div class="contacts__item contacts__item--address">
           <h3 class="contacts__title">Приезжайте в гости:</h3>
           <p class="contacts__link">
             ул. Большая Конюшенная, 19/8
@@ -193,29 +220,47 @@
     </div>
   </section>
   <footer class="page-footer">
-    <div class="page-footer__container page-footer__row">
-      <img src="img/logo-footer.svg" width="74" height="23" alt="Приложение «Pink»">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы на Ютубе</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
-        </a>
+    <div class="page-footer__container">
+      <div class="page-footer__row">
+        <img src="img/logo-footer.svg" width="74" height="23" alt="Приложение «Pink»">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы на Ютубе</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          </a>
+        </div>
       </div>
     </div>
   </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>

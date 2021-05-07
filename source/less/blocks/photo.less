@@ -1,27 +1,59 @@
 .photo__container {
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 660px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 980px;
+  }
 }
 
 .photo__row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
 }
 
 .photo__item {
+  position: relative;
   width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
+    padding-right: 10px;
+    padding-left: 10px;
     max-width: 50%;
+    flex-basis: 50%;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 33.3%;
+    flex-basis: 33.3%;
   }
 }
 
 .photo__item--panorama {
+  width: 100%;
   max-width: 100%;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .photo__item--panorama::before {
@@ -31,9 +63,19 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  padding: 14px 0;
   background-color: @pink;
   color: @white;
   display: block;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  left: auto;
+  bottom: auto;
 }
 
 .photo__text {
@@ -43,4 +85,14 @@
   line-height: 30px;
   color: @darkgrey;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 90px;
+    padding-left: 90px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

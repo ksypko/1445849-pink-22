@@ -4,16 +4,31 @@
   position: relative;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.png");
+    background-size: 640 center;
+  }
+
   @media (min-width: @tablet-width) {
     background: @sapphire url("../img/back-tablet.png") no-repeat 50% 0;
     min-height: 730px;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.png");
+      background-size: 1320px center;
+    }
   }
 
   @media (min-width: @desktop-width) {
     background: @sapphire url("../img/back-desktop.png") no-repeat 50% 50%;
     min-height: 850px;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.png");
+      background-size: 2400px center;
+    }
   }
 }
 
@@ -56,15 +71,31 @@
 .promo__button {
   font-size: 18px;
   line-height: 18px;
+  font-weight: bold;
   color: @white;
   border: 3px solid @white;
   box-sizing: border-box;
   border-radius: 29px;
-  padding: 21px 40px;
+  padding: 15px 20px;
   display: block;
   width: auto;
   text-align: center;
   margin-bottom: 38px;
+  background-color: transparent;
+
+  &:hover {
+    background-color: @white;
+    color: @pink;
+  }
+
+  &:active {
+    background-color: @white;
+    color: fade(@pink, 30%);
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
 }
 
 .promo__title {
@@ -82,7 +113,9 @@
   @media (min-width: @tablet-width) {
     width: 50%;
     font-size: 40px;
-    padding-top: 230px;
+    padding-top: 200px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
 
   @media (min-width: @desktop-width) {
@@ -90,7 +123,7 @@
     max-width: 300px;
     font-size: 50px;
     line-height: 68px;
-    padding-top: 150px;
+    padding-top: 240px;
   }
 }
 
@@ -98,6 +131,8 @@
   @media (max-width: @mobile-width-only) {
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
+    position: relative;
+    top: 8px;
   }
 
   @media (min-width: @tablet-width) {
@@ -107,6 +142,14 @@
     right: 0;
     left: auto;
   }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 100px;
+  }
 }
 
 .promo__text {
@@ -115,11 +158,17 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .promo__block {
   padding-top: 28px;
   padding-bottom: 38px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 50%;

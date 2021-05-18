@@ -26,6 +26,7 @@
   margin: 0;
   padding: 0;
   position: relative;
+  cursor: pointer;
 }
 
 .form__item--username {
@@ -77,6 +78,15 @@
 
 .form__item--mobile {
   margin-bottom: 63px;
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 75px;
+  }
 }
 
 .form__item--mobile:last-child {
@@ -138,6 +148,14 @@
   width: 100%;
   text-align: center;
 
+  &:hover {
+    background-color: @darkgreen;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
+
   @media (min-width: @tablet-width) {
     order: 6;
     max-width: 50%;
@@ -158,6 +176,14 @@
   border-radius: 1px;
   display: inline-block;
   width: 100%;
+
+  &:hover {
+    border: 2px solid @darkgrey;
+  }
+
+  &:active {
+    border: 2px solid @pink;
+  }
 }
 
 .form__input--phone {
@@ -195,6 +221,15 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
+  cursor: pointer;
+}
+
+.form__label--mobile {
+  margin-left: 60px;
+}
+
+.form__label--progress {
+  margin-left: 60px;
 }
 
 .form__label--phone::before {
@@ -348,6 +383,8 @@
 
 .form__fieldset--username {
   border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__fieldset--contacts {
@@ -370,9 +407,11 @@
 .form__fieldset--mobile {
   padding-top: 42px;
   padding-bottom: 42px;
+  padding-left: 0;
+  padding-right: 0;
 
   @media (min-width: @desktop-width) {
-    padding: 55px 75px;
+    padding: 55px 0;
   }
 }
 
@@ -449,7 +488,7 @@
 
   @media (min-width: @desktop-width) {
     max-width: 50%;
-    width: 45%;
+    width: 50%;
   }
 }
 
@@ -464,4 +503,47 @@
     order: 5;
     margin-bottom: 70px;
   }
+}
+
+.form__hidden {
+  display: none;
+}
+
+.form__item--mobile .form__label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  background: @white;
+  border: 2px solid @gray90;
+  border-radius: 50%;
+}
+
+.form__item--progress .form__label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background: @white;
+  border: 2px solid @gray90;
+}
+
+.form__hidden--radio:checked + .form__label::before {
+  content: "";
+  background-image: url("../img/ellipse.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px 15px;
+}
+
+.form__item--mobile:hover .form__label::before {
+  border: 2px solid @darkgrey;
+}
+
+.form__item--mobile:active .form__label::before {
+  border: 2px solid @pink;
 }

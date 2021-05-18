@@ -10,36 +10,36 @@
 
 <body class="page__body">
   <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a class="page-header__logo">
-          <img src="img/logo-mobile.svg" width="74" height="23" alt="Приложение «Pink»">
-        </a>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__container">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <a class="page-header__logo">
+        <img src="img/logo-mobile.svg" width="74" height="23" alt="Приложение «Pink»">
+      </a>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__container">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Мобильное приложение «Pink»</h1>
@@ -89,12 +89,14 @@
             </div>
             <div class="information__item information__item--world">
               <h3 class="information__title">Меняет мир вокруг</h3>
-              <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+              <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                усилить
                 эффект</p>
             </div>
             <div class="information__item information__item--friends">
               <h3 class="information__title">Заводит новых друзей</h3>
-              <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+                новых
               </p>
             </div>
           </div>
@@ -109,7 +111,8 @@
           </div>
           <div class="time__block">
             <h2 class="time__title">Эффект <br>на 24 часа!</h2>
-            <p class="time__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <p class="time__text">Британские ученые провели исследования и доказали, что положительный эффект от
+              использования приложения длится целые сутки!</p>
             <a href="" class="time__link">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -229,10 +232,12 @@
               <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+                Фейсбуке</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы на Ютубе</a>
+              <a class="social__link social__link--youtube"
+                href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы на Ютубе</a>
             </li>
           </ul>
         </div>
@@ -251,7 +256,7 @@
 
     navMain.classList.remove('main-nav--nojs');
 
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {
         navMain.classList.remove('main-nav--closed');
         navMain.classList.add('main-nav--opened');

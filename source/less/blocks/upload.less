@@ -34,6 +34,13 @@
   }
 }
 
+.upload__container--buttons {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .upload__inner {
   margin-left: auto;
   margin-right: auto;
@@ -101,8 +108,8 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 100%;
   display: block;
   background-color: transparent;
@@ -127,6 +134,10 @@
   border: 3px solid @darkgrey;
   color: @darkgrey;
   opacity: 0.1;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 44px;
+  }
 
   &:hover {
     opacity: 0.3;
@@ -155,10 +166,20 @@
 
 .upload__control--crop {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    top: 150px;
+  }
 }
 
 .upload__control--fill {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    top: 220px;
+  }
 }
 
 .upload__control--contrast {
@@ -179,6 +200,14 @@
 
 .upload__block--buttons {
   padding-top: 60px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 190px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 278px;
+  }
 }
 
 .upload__image {

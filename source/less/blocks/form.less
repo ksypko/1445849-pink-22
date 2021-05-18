@@ -236,14 +236,13 @@
   @media (min-width: @tablet-width) {
     content: "";
     display: block;
-    background: @gray90 url("../img/phone.svg") 0 0 no-repeat;
-    background-position: 50% 50%;
+    background: @gray90 url("../img/phone.svg") 50% 50% no-repeat;
     background-size: 20px 19px;
     position: absolute;
     top: 0;
     right: 0;
     width: 59px;
-    height: 62px;
+    height: 63px;
     z-index: 2;
   }
 }
@@ -252,14 +251,13 @@
   @media (min-width: @tablet-width) {
     content: "";
     display: block;
-    background: @gray90 url("../img/mail.svg") 0 0 no-repeat;
-    background-position: 50% 50%;
+    background: @gray90 url("../img/mail.svg") 50% 50% no-repeat;
     background-size: 18px 13px;
     position: absolute;
     top: 0;
     right: 0;
     width: 59px;
-    height: 62px;
+    height: 63px;
     z-index: 2;
   }
 }
@@ -355,6 +353,10 @@
   @media (min-width: @tablet-width) {
     padding-right: 30px;
     padding-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -532,7 +534,7 @@
   border: 2px solid @gray90;
 }
 
-.form__hidden--radio:checked + .form__label::before {
+.form__hidden--radio:checked + .form__label--mobile::before {
   content: "";
   background-image: url("../img/ellipse.svg");
   background-repeat: no-repeat;
@@ -546,4 +548,25 @@
 
 .form__item--mobile:active .form__label::before {
   border: 2px solid @pink;
+}
+
+.form__hidden--checkbox:checked + .form__label--progress::before {
+  content: "";
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 16px;
+}
+
+.form__item--progress:hover .form__label::before {
+  border: 2px solid @darkgrey;
+}
+
+.form__item--progress:active .form__label::before {
+  border: 2px solid @pink;
+}
+
+.form__text--required {
+  padding: 0;
+  color: @pink;
 }

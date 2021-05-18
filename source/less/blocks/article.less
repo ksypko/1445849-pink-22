@@ -2,6 +2,19 @@
   background-color: @lightgrey;
   display: flex;
   flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+.article__body {
+  padding: 25px 17px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @media (min-width: @tablet-width) {
+    padding: 30px;
+  }
 }
 
 .article__title {
@@ -10,6 +23,9 @@
   font-size: 14px;
   line-height: 24px;
   color: @darkgrey;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .article__author {
@@ -22,6 +38,15 @@
   font-size: 14px;
   line-height: 24px;
   color: @darkgrey;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.article__content--panorama {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .article__datetime {
@@ -31,6 +56,9 @@
   line-height: 24px;
   text-transform: uppercase;
   color: @darkgrey;
+  padding: 0;
+  margin: 0;
+  margin-left: 3px;
 }
 
 .article__meta {
@@ -40,4 +68,32 @@
   line-height: 24px;
   text-transform: uppercase;
   color: @pink;
+  padding: 0;
+  margin: 0;
+  margin-top: auto;
+}
+
+.article__meta--like::after {
+  content: "";
+  background: transparent url("../img/heart.svg") no-repeat 0 0;
+  background-size: 13px 12px;
+  display: block;
+  float: right;
+  width: 13px;
+  height: 12px;
+  position: relative;
+  top: 5px;
+  margin-left: 16px;
+}
+
+.article__meta--panorama {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}
+
+.article__img {
+  width: 100%;
 }

@@ -41,6 +41,18 @@
   background: @darkgrey;
   position: relative;
   overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 23px;
+    padding-bottom: 25px;
+  }
 }
 
 .price__header--hit::before {
@@ -58,6 +70,16 @@
   left: -106px;
   transform: rotate(-45deg);
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    top: 8px;
+    left: -55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 16px;
+    left: -86px;
+  }
 }
 
 .price__section {
@@ -89,13 +111,13 @@
     display: block;
     font-size: 14px;
     position: relative;
-    top: 60px;
+    top: 96px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     position: relative;
-    top: 60px;
+    top: 108px;
   }
 }
 
@@ -172,5 +194,13 @@
 
   @media (min-width: @tablet-width) {
     left: 50%;
+  }
+}
+
+.price__toggles {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }

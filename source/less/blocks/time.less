@@ -4,14 +4,16 @@
   @media (min-width: @tablet-width) {
     display: block;
     padding-top: 55px;
-    margin-bottom: 110px;
+    margin-bottom: 97px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 17px;
+    padding-top: 0;
     padding-bottom: 65px;
     background-color: @lightgrey;
-    margin-bottom: 70px;
+    margin-bottom: 0;
+    position: relative;
+    top: -50px;
   }
 }
 
@@ -41,11 +43,14 @@
   @media (min-width: @tablet-width) {
     width: 50%;
     max-height: 276px;
-    margin-right: 72px;
+    padding-right: 75px;
   }
 
   @media (min-width: @desktop-width) {
     max-height: 345px;
+    width: 33.3%;
+    margin-right: 70px;
+    padding-right: 0;
   }
 }
 
@@ -53,14 +58,19 @@
   @media (min-width: @tablet-width) {
     width: 50%;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 66.6%;
+  }
 }
 
 .time__title {
-  @media (min-width: @desktop-width) {
-    font-style: normal;
-    font-weight: bold;
+  @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 36px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -73,12 +83,17 @@
 }
 
 .time__link {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  color: @pink;
-  text-decoration: underline;
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: @pink;
+    text-decoration: underline;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .time__text {
@@ -86,8 +101,12 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
 
   @media (min-width: @desktop-width) {
+    font-size: 18px;
     line-height: 30px;
   }
 }

@@ -156,6 +156,12 @@
     color: fade(@white, 30%);
   }
 
+  &:disabled {
+    background-color: @gray90;
+    border: 2px solid @gray90;
+    color: white;
+  }
+
   @media (min-width: @tablet-width) {
     order: 6;
     max-width: 50%;
@@ -179,10 +185,12 @@
 
   &:hover {
     border: 2px solid @darkgrey;
+    outline: none;
   }
 
   &:active {
     border: 2px solid @pink;
+    outline: none;
   }
 }
 
@@ -206,6 +214,7 @@
   line-height: 30px;
   padding: 20px 23px;
   min-height: 197px;
+  display: block;
 
   @media (min-width: @tablet-width) {
     min-height: 189px;
@@ -213,6 +222,14 @@
 
   @media (min-width: @desktop-width) {
     min-height: 124px;
+  }
+
+  &:hover {
+    border: 2px solid @darkgrey;
+  }
+
+  &:active {
+    border: 2px solid @pink;
   }
 }
 

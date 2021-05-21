@@ -22,7 +22,7 @@
 }
 
 .popup__success {
-  display: block;
+  display: none;
   text-align: center;
 }
 
@@ -76,6 +76,12 @@
 
   &:active {
     color: fade(@white, 30%);
+  }
+
+  &:disabled {
+    background-color: @gray90;
+    border: 2px solid @gray90;
+    color: white;
   }
 }
 

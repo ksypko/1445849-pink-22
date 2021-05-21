@@ -83,6 +83,11 @@
   display: inline-block;
   text-align: center;
   vertical-align: middle;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-bottom: 33px;
+  }
 }
 
 .upload__text {
@@ -162,6 +167,10 @@
   height: auto;
   padding-right: 40px;
   padding-left: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 80px;
+  }
 }
 
 .upload__control--crop {
@@ -169,7 +178,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    top: 150px;
+    top: 10px;
   }
 }
 
@@ -178,12 +187,17 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    top: 220px;
+    top: 85px;
   }
 }
 
 .upload__control--contrast {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    top: 155px;
+  }
 }
 
 .upload__control::after {
@@ -202,11 +216,11 @@
   padding-top: 60px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 190px;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 278px;
+    padding-top: 109px;
   }
 }
 
@@ -215,17 +229,38 @@
 }
 
 .upload__icon {
-  fill: @pink;
+  fill: @darkgrey;
+  fill-opacity: 0.3;
 
   &:hover {
-    fill: @darkgrey;
-    fill-opacity: 0.3;
+    fill: @pink;
+    fill-opacity: 1;
   }
 
   &:active {
     fill: @darkgrey;
     fill-opacity: 0.5;
   }
+
+  @media (min-width: @tablet-width) {
+    fill: @pink;
+    fill-opacity: 1;
+
+    &:hover {
+      fill: @darkgrey;
+      fill-opacity: 0.3;
+    }
+
+    &:active {
+      fill: @darkgrey;
+      fill-opacity: 0.5;
+    }
+  }
+}
+
+.upload__icon--current {
+  fill: @pink;
+  fill-opacity: 1;
 }
 
 .upload__input {
@@ -265,4 +300,8 @@
     border: none;
     background: @pink;
   }
+}
+
+.upload__label {
+  display: none;
 }

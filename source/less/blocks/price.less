@@ -1,3 +1,36 @@
+.price {
+  background-color: @lightgrey;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  &::before {
+    position: absolute;
+    top: -27px;
+    left: auto;
+    right: 0;
+    width: 100%;
+    height: 27px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' preserveAspectRatio='none'%3E%3Cpolygon points='1,0 0,1 1,1' fill='%23F2F2F2'/%3E%3C/svg%3E");
+    content: "";
+    background-repeat: no-repeat;
+
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      top: -100px;
+      left: auto;
+      right: 0;
+      width: 100%;
+      height: 100px;
+    }
+  }
+}
+
 .price__container {
   min-width: 280px;
   margin-left: auto;
@@ -45,8 +78,8 @@
   padding-bottom: 35px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 20px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -72,8 +105,9 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    top: 8px;
-    left: -55px;
+    top: 10px;
+    left: -57px;
+    line-height: 18px;
   }
 
   @media (min-width: @desktop-width) {
@@ -111,7 +145,7 @@
     display: block;
     font-size: 14px;
     position: relative;
-    top: 96px;
+    top: 80px;
   }
 
   @media (min-width: @desktop-width) {
@@ -141,21 +175,24 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
-  text-transform: uppercase;
   color: @darkgrey;
 }
 
 .price__item {
   display: block;
-  padding: 25px 20px;
+  padding: 16px 20px;
   border-top: 2px solid @gray90;
   border-bottom: 2px solid @gray90;
   width: 100%;
   text-align: left;
   position: relative;
+  background-color: @white;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     font-size: 0;
+    text-transform: unset;
+    padding: 12px 12px;
   }
 
   @media (min-width: @desktop-width) {
@@ -199,6 +236,8 @@
 
 .price__toggles {
   display: block;
+  margin-top: 45px;
+  margin-bottom: 0;
 
   @media (min-width: @tablet-width) {
     display: none;

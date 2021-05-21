@@ -28,7 +28,7 @@
   display: block;
   width: 70px;
   height: 50px;
-  background-color: fade(@darkgrey, 30%);
+  background-color: transparent;
   cursor: pointer;
   border: none;
 
@@ -51,18 +51,20 @@
     height: 3px;
     background-color: @white;
     box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
+  }
 
-    &:hover {
-      background-color: @pink;
-      box-shadow: 0 10px 0 0 @pink, 0 20px 0 0 @pink;
-    }
+  .main-nav--closed .main-nav__toggle:hover::before {
+    background-color: @pink;
+    box-shadow:
+      0 10px 0 0 @pink,
+      0 20px 0 0 @pink;
   }
 
   .main-nav--closed .main-nav__toggle:active::before {
-    background-color: fade(@white, 30%);
+    background-color: fade(@pink, 30%);
     box-shadow:
-      0 10px 0 0 fade(@white, 30%),
-      0 20px 0 0 fade(@white, 30%);
+      0 10px 0 0 fade(@pink, 30%),
+      0 20px 0 0 fade(@pink, 30%);
   }
 
   .main-nav--opened .main-nav__toggle {
@@ -93,11 +95,16 @@
     &::after {
       transform: rotate(-45deg);
     }
+  }
 
-    &:active::before,
-    &:active::after {
-      background-color: fade(@white, 30%);
-    }
+  .main-nav--opened .main-nav__toggle:hover::before,
+  .main-nav--opened .main-nav__toggle:hover::after {
+    background-color: @pink;
+  }
+
+  .main-nav--opened .main-nav__toggle:active::before,
+  .main-nav--opened .main-nav__toggle:active::after {
+    background-color: fade(@pink, 30%);
   }
 }
 
@@ -108,6 +115,19 @@
 
   .main-nav--closed .user-list__item {
     display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__container {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
   }
 }
 

@@ -1,5 +1,4 @@
 .reviews {
-  margin-bottom: 120px;
   position: relative;
 
   @media (min-width: @desktop-width) {
@@ -8,6 +7,7 @@
     background-position: 50% 40px;
     background-size: 79px 63px;
     padding-top: 120px;
+    padding-bottom: 90px;
   }
 }
 
@@ -15,9 +15,11 @@
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  padding: 40px 20px 40px 20px;
 
   @media (min-width: @tablet-width) {
     max-width: 660px;
+    padding: 0 20px 40px 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,6 +36,7 @@
 
 .reviews__item {
   text-align: center;
+  margin: 0;
 }
 
 .reviews__author-info {
@@ -52,6 +55,14 @@
 
   @media (min-width: @tablet-width) {
     order: 2;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 17px;
   }
 }
 
@@ -62,16 +73,24 @@
     display: block;
     order: 3;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .reviews__text {
   color: @darkgrey;
   line-height: 30px;
+  order: 2;
 
   @media (min-width: @tablet-width) {
     order: 1;
     font-size: 18px;
     line-height: 30px;
+    margin: 0;
+    margin-bottom: 40px;
   }
 }
 
@@ -121,7 +140,7 @@
   opacity: 0.3;
 
   &:hover {
-    opacity: 1;
+    opacity: 0.6;
   }
 
   &:active {
@@ -131,6 +150,7 @@
 
 .reviews__toggles {
   display: block;
+  margin-top: 30px;
 
   @media (min-width: @desktop-width) {
     display: none;

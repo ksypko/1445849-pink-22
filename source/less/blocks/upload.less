@@ -1,7 +1,7 @@
 .upload__page {
   background-color: @lightgrey;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   margin-left: auto;
   margin-right: auto;
 
@@ -11,6 +11,9 @@
     grid-template-rows: 1fr;
     width: 100%;
     max-width: 660px;
+    padding-top: 60px;
+    padding-bottom: 35px;
+    margin-top: 68px;
   }
 
   @media (min-width: @desktop-width) {
@@ -35,9 +38,16 @@
 }
 
 .upload__container--buttons {
+  @media (min-width: @tablet-width) {
+    padding-right: 34px;
+    padding-left: 34px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
+    padding-right: 80px;
+    padding-left: 0;
   }
 }
 
@@ -50,10 +60,11 @@
 
   @media (min-width: @tablet-width) {
     max-width: 660px;
+    padding-right: 12px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 60px 80px;
+    padding: 0 96px 0;
     max-width: 980px;
   }
 }
@@ -61,18 +72,19 @@
 .upload__list {
   list-style: none;
   margin: 0;
-  padding: 0;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  padding: 40px 40px 0 40px;
   position: relative;
-  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
+    padding: 9px 40px 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 60px;
+    margin: 0;
+    padding: 0;
+    margin-left: 1px;
+    margin-top: -3px;
   }
 }
 
@@ -86,7 +98,11 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    margin-bottom: 33px;
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 31px;
   }
 }
 
@@ -98,13 +114,15 @@
   text-align: center;
   color: @darkgrey;
   padding: 0;
-  margin: 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 24px 0 40px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 4px 0 40px;
   }
 }
 
@@ -124,6 +142,10 @@
   color: @pink;
   text-align: center;
   margin-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+  }
 
   &:hover {
     background-color: @pink;
@@ -159,7 +181,7 @@
 
 .upload__control {
   position: absolute;
-  top: 80px;
+  top: 104px;
   left: 0;
   bottom: auto;
   min-width: 280px;
@@ -169,7 +191,11 @@
   padding-left: 40px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 80px;
+    padding-left: 88px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 109px;
   }
 }
 
@@ -178,7 +204,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    top: 10px;
+    top: 3px;
   }
 }
 
@@ -187,7 +213,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    top: 85px;
+    top: 76px;
   }
 }
 
@@ -196,7 +222,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    top: 155px;
+    top: 146px;
   }
 }
 
@@ -213,14 +239,14 @@
 }
 
 .upload__block--buttons {
-  padding-top: 60px;
+  padding-top: 104px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 0;
+    padding-top: 43px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 109px;
+    padding-top: 133px;
   }
 }
 
@@ -255,6 +281,51 @@
       fill: @darkgrey;
       fill-opacity: 0.5;
     }
+  }
+}
+
+.upload__icon--crop {
+  width: 44px;
+  height: 44px;
+
+  @media (min-width: @tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.upload__icon--fill {
+  width: 48px;
+  height: 43px;
+
+  @media (min-width: @tablet-width) {
+    width: 24px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 48px;
+    height: 43px;
+  }
+}
+
+.upload__icon--contrast {
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: @tablet-width) {
+    width: 16px;
+    height: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 32px;
   }
 }
 

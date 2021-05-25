@@ -40,6 +40,7 @@
   width: 100%;
   position: relative;
   min-height: 460px;
+  overflow: hidden;
 
   @media (min-width: @tablet-width) {
     max-width: 660px;
@@ -58,6 +59,10 @@
   justify-content: center;
   margin-bottom: 18px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 26px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 45px;
   }
@@ -66,10 +71,7 @@
 .promo__item {
   margin-right: 35px;
   align-self: baseline;
-}
-
-.promo__item:last-child {
-  margin-right: 0;
+  display: inline-block;
 }
 
 .promo__button {
@@ -120,10 +122,10 @@
   @media (min-width: @tablet-width) {
     width: 50%;
     font-size: 40px;
-    padding-top: 200px;
+    padding-top: 204px;
     padding-left: 35px;
-    padding-right: 35px;
-    margin: 0 0 38px;
+    padding-right: 40px;
+    margin: 0 0 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -132,6 +134,7 @@
     font-size: 50px;
     line-height: 68px;
     padding-top: 210px;
+    margin: 0 0 36px;
   }
 }
 
@@ -155,9 +158,10 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     top: auto;
-    bottom: 0;
+    bottom: 18px;
     right: auto;
-    left: 100px;
+    left: 63px;
+    transform: scale(1.08);
   }
 }
 
@@ -177,11 +181,11 @@
 
 .promo__block {
   padding-top: 28px;
-  padding-bottom: 38px;
+  padding-bottom: 30px;
   position: relative;
 
   @media (min-width: @tablet-width) {
-    width: 50%;
+    width: 48%;
     padding-top: 0;
   }
 

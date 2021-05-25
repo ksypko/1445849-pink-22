@@ -5,7 +5,7 @@
   padding-bottom: 50px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 50px;
+    padding-top: 55px;
     padding-bottom: 70px;
   }
 
@@ -74,17 +74,17 @@
   background: @darkgrey;
   position: relative;
   overflow: hidden;
-  padding-top: 20px;
-  padding-bottom: 35px;
+  padding-top: 13px;
+  padding-bottom: 27px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 8px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 23px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 22px;
   }
 }
 
@@ -99,13 +99,13 @@
   color: @white;
   display: block;
   position: absolute;
-  top: 17px;
-  left: -106px;
+  top: 18px;
+  left: -112px;
   transform: rotate(-45deg);
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    top: 10px;
+    top: 17px;
     left: -57px;
     line-height: 18px;
   }
@@ -151,7 +151,7 @@
   @media (min-width: @desktop-width) {
     font-size: 18px;
     position: relative;
-    top: 108px;
+    top: 104px;
   }
 }
 
@@ -180,7 +180,7 @@
 
 .price__item {
   display: block;
-  padding: 16px 20px;
+  padding: 13px 20px;
   border-top: 2px solid @gray90;
   border-bottom: 2px solid @gray90;
   width: 100%;
@@ -192,11 +192,12 @@
   @media (min-width: @tablet-width) {
     font-size: 0;
     text-transform: unset;
-    padding: 12px 12px;
+    padding: 6px 12px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 0;
+    padding: 13px 20px;
   }
 }
 
@@ -236,10 +237,18 @@
 
 .price__toggles {
   display: block;
-  margin-top: 45px;
+  margin-top: 30px;
   margin-bottom: 0;
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.price__subtitle {
+  @media (min-width: @desktop-width) {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
   }
 }

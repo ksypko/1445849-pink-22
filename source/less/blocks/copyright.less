@@ -4,16 +4,27 @@
   font-size: 14px;
   line-height: 18px;
   position: relative;
-  top: -12px;
+  top: -11px;
   margin-right: 15px;
+
+  @media (min-width: @tablet-width) {
+    top: -13px;
+    margin-right: 12px;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
+    margin-right: 10px;
   }
 }
 
 .copyright__icon--academy {
   fill: @pink;
+  margin-top: 10px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 7px;
+  }
 
   &:hover {
     fill: @darkgrey;

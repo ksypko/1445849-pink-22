@@ -1,3 +1,13 @@
+.photo {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .photo__container {
   margin-left: auto;
   margin-right: auto;
@@ -31,24 +41,38 @@
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     padding-right: 10px;
     padding-left: 10px;
     max-width: 50%;
     flex-basis: 50%;
+    margin-bottom: 20px;
+    min-height: 455px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 33.3%;
     flex-basis: 33.3%;
+    margin-bottom: 54px;
+    min-height: 555px;
   }
 }
 
 .photo__item--panorama {
   width: 100%;
   max-width: 100%;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 54px;
+  }
+}
+
+.photo__image--panorama {
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     padding-right: 0;
@@ -67,7 +91,7 @@
   width: 100%;
   max-width: 140px;
   height: auto;
-  padding: 14px 0;
+  padding: 6px 0;
   background-color: @pink;
   color: @white;
   display: block;
@@ -79,11 +103,12 @@
   z-index: 2;
 
   @media (min-width: @tablet-width) {
-    top: 55px;
+    top: 58px;
   }
 
   @media (min-width: @desktop-width) {
-    right: 25.5%;
+    right: 11%;
+    top: 54px;
   }
 }
 
@@ -95,13 +120,20 @@
   color: @darkgrey;
   text-align: center;
   margin: 0;
-  padding: 0;
-  margin-bottom: 60px;
+  padding: 0 15px;
+  margin-bottom: 50px;
 
   @media (min-width: @tablet-width) {
     padding-right: 90px;
     padding-left: 90px;
     font-size: 18px;
     line-height: 30px;
+    margin: 0 0 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 150px;
+    padding-left: 150px;
+    margin: 0 0 89px;
   }
 }

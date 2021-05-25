@@ -28,16 +28,6 @@
 
 .page-header__logo {
   display: block;
-  padding: 23px 20px;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 27px;
-    padding-bottom: 40px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 0;
-  }
 }
 
 .page-header__logo img {
@@ -52,5 +42,77 @@
   @media (min-width: @desktop-width) {
     width: 147px;
     height: 40px;
+  }
+}
+
+.page-header__logo--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    fill: @white;
+    height: auto;
+    width: auto;
+    display: block;
+    padding-top: 27px;
+    padding-bottom: 40px;
+    padding-left: 0;
+  }
+
+  &:hover {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @white;
+    fill-opacity: 0.3;
+  }
+}
+
+.page-header__logo--tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    fill: @white;
+    height: auto;
+    width: auto;
+    padding-top: 27px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+
+  &:hover {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @white;
+    fill-opacity: 0.3;
+  }
+}
+
+.page-header__logo--mobile {
+  fill: @white;
+  height: auto;
+  width: auto;
+  display: block;
+  padding: 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  &:hover {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @white;
+    fill-opacity: 0.3;
   }
 }

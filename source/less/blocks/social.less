@@ -1,8 +1,17 @@
-.social__list {
+.social {
   display: flex;
   flex-direction: row;
   padding: 0;
-  margin: 40px 0;
+  margin: 40px 0 30px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-right: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .social__link {
@@ -26,6 +35,12 @@
   background-color: @white;
   border: 3px solid fade(@darkgrey, 10%);
   border-radius: 50%;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 20px;
+    margin-right: -8px;
+    margin-top: 8px;
+  }
 
   &:hover {
     border: 3px solid fade(@darkgrey, 100%);
